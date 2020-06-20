@@ -3,8 +3,8 @@
 
 def key_for_min_value(name_hash)
 new_hash = {}
-#name_hash.select do |name, value|
-  #if value < name_hash.max_by {|a,b| b
+name_hash.select do |name, value|
+   value < name_hash.max_by {|a,b| b}
   #finds max value for comparison
 # 1,2,5,10 ; if less than 10 , then..? store value and compare again until empty?
 #new_hash[name] << value 
